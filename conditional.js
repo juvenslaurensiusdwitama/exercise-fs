@@ -172,16 +172,18 @@
 //     temp = "";
 // }
 
-var num = 5;
-var temp = '';
+// var num = 5;
+// var temp = '';
 
-for(var i = 0; i < num; i++){
-    for (var j = 0; j <= i; j++){
-        temp += (j + 1)
-    }
-    console.log(temp);
-    temp = "";
-}
+// for(var i = 0; i < num; i++){
+//     for (var j = 0; j <= i; j++){
+//         temp += (j + 1)
+//     }
+//     console.log(temp);
+//     temp = "";
+// }
+
+
 
 
 
