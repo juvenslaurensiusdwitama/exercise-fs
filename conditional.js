@@ -93,23 +93,32 @@
 //         }break; 
 // } 
 
-var coupon = "Free15%";
-var harga =  40000;
+// var coupon = "Free15%";
+// var harga =  40000;
 
-if(coupon === "FreeOngkir"){
-    if(harga >= 50000){
-        console.log(harga - (harga*0.1));
-    }else if(harga >= 30000 && harga <= 50000){
-        console.log(harga - (harga*0.05));
-    }else if(harga < 30000)
-        console.log(harga - (harga*0.025));
-}else if(coupon === "Free15%"){
-    if(harga >= 30000){
-        console.log(harga - (harga*0.15));
-    }else if(harga < 30000){
-        console.log(harga - (harga*0.00));
-    }
-} 
+// if(coupon === "FreeOngkir"){
+//     if(harga >= 50000){
+//         console.log(harga - (harga*0.1));
+//     }else if(harga >= 30000 && harga <= 50000){
+//         console.log(harga - (harga*0.05));
+//     }else if(harga < 30000)
+//         console.log(harga - (harga*0.025));
+// }else if(coupon === "Free15%"){
+//     if(harga >= 30000){
+//         console.log(harga - (harga*0.15));
+//     }else if(harga < 30000){
+//         console.log(harga - (harga*0.00));
+//     }
+// } 
+
+for(var i=1; i<=10; i++){
+    console.log(i);
+}
+var i = 1
+while(i <= 10){
+    console.log(i);
+    i++; 
+}
 
 
 
