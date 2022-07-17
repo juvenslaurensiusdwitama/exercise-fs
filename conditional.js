@@ -138,17 +138,29 @@
 //     }
 // }  
 
-var str = "sarapan";
-var temp = "";
+// var str = "sarapan";
+// var temp = "";
 
-for(var i = 0; i < str.length; i++){
-    if(i % 2 === 0){
-        temp = temp + str[i].toUpperCase();
-    }else{
-        temp = temp + str[i];
+// for(var i = 0; i < str.length; i++){
+//     if(i % 2 === 0){
+//         temp = temp + str[i].toUpperCase();
+//     }else{
+//         temp = temp + str[i];
+//     }
+// }
+// console.log(temp); 
+
+var num = 3;
+var temp = "";
+for (var i = 0; i < num; i++){
+    for (var j = 0; j < num; j++){
+        temp += "#"
     }
+    console.log(temp);
+    temp = "";
 }
-console.log(temp);
+
+
 
 
 
