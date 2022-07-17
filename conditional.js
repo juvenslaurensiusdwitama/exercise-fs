@@ -48,13 +48,51 @@
 //     console.log("Input nilai antara 0 - 100");
 // } 
 
-var bilangan = 7;
+// var bilangan = 7;
 
-if(bilangan % 7 === 0){
-    console.log(bilangan + " adalah bilangan genap");
-}else if(bilangan % 7 === 1){
-    console.log(bilangan + " adalah bilangan ganjil");
-}
+// if(bilangan % 7 === 0){
+//     console.log(bilangan + " adalah bilangan genap");
+// }else if(bilangan % 7 === 1){
+//     console.log(bilangan + " adalah bilangan ganjil");
+// }
+
+// var minuman = "Boba";
+
+// if(minuman === ""){
+//     console.log("Input minuman");
+// }else if(minuman === "Sweet Tea"){
+//     console.log("You choose Sweet Tea, thanks");
+// }else if(minuman === "Plain Tea"){
+//     console.log("You choose Plain Tea, thanks");
+// }else if(minuman === "Boba"){
+//     console.log("You choose Boba, thanks");
+// }else if(minuman === "Milk Coffee"){
+//     console.log("You choose Milk Coffee, thanks");
+// }else if(minuman === "Choco Ice"){
+//     console.log("You choose Choco Ice, thanks");
+// }else{
+//     console.log("minuman is undifined");
+// }
+
+// switch(minuman){
+//     case 'Sweet Tea':
+//         console.log("You choose Sweet Tea, thanks");break;
+//     case 'Plain Tea':
+//         console.log("You choose Plain Tea, thanks");break;
+//     case 'Boba':
+//         console.log("You choose Boba, thanks");break;
+//     case 'Milk Coffee':
+//         console.log("You choose Milk Coffee, thanks");break;
+//     case 'Choco Ice':
+//         console.log("You choose Choco Ice, thanks");break;
+//     default:
+//         if(minuman === ""){
+//             console.log("Input minuman");
+//         }else{
+//             console.log("minuman is undefined");
+//         }break; 
+// } 
+
 
 
 
