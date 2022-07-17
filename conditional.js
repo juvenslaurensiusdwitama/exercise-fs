@@ -150,15 +150,30 @@
 // }
 // console.log(temp); 
 
-var num = 3;
-var temp = "";
-for (var i = 0; i < num; i++){
-    for (var j = 0; j < num; j++){
-        temp += "#"
-    }
-    console.log(temp);
-    temp = "";
-}
+// var num = 3;
+// var temp = "";
+// for (var i = 0; i < num; i++){
+//     for (var j = 0; j < num; j++){
+//         temp += "#"
+//     }
+//     console.log(temp);
+//     temp = "";
+// }
+
+// var num = 5;
+// var temp = '';
+// var chara = "@";
+
+// for (var i = 0; i < num; i++){
+//     for (var j = 0; j <= i; j++){
+//         temp += chara;
+//     }
+//     console.log(temp);
+//     temp = "";
+// }
+
+
+
 
 
 
