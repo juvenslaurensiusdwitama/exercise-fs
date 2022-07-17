@@ -120,14 +120,35 @@
 //     i++; 
 // }
 
-for(var i=20; i>10; i--){
-    console.log(i);
+// for(var i=20; i>10; i--){
+//     console.log(i);
+// }
+// var i = 35
+// while(i > 10){
+//     console.log(i);
+//     i--;
+// }
+
+// var angka = 5;
+// for(var i = 1; i <= angka; i++){
+//     if(i % 2 === 0){
+//         console.log(i + " bilangan genap");
+//     }else{
+//         console.log(i + " bilangan ganjil");
+//     }
+// }  
+
+var str = "sarapan";
+var temp = "";
+
+for(var i = 0; i < str.length; i++){
+    if(i % 2 === 0){
+        temp = temp + str[i].toUpperCase();
+    }else{
+        temp = temp + str[i];
+    }
 }
-var i = 35
-while(i > 10){
-    console.log(i);
-    i--;
-}
+console.log(temp);
 
 
 
