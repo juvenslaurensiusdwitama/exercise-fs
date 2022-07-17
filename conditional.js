@@ -111,14 +111,24 @@
 //     }
 // } 
 
-for(var i=1; i<=10; i++){
+// for(var i=1; i<=10; i++){
+//     console.log(i);
+// }
+// var i = 1
+// while(i <= 10){
+//     console.log(i);
+//     i++; 
+// }
+
+for(var i=20; i>10; i--){
     console.log(i);
 }
-var i = 1
-while(i <= 10){
+var i = 35
+while(i > 10){
     console.log(i);
-    i++; 
+    i--;
 }
+
 
 
 
