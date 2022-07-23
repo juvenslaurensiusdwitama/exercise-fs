@@ -164,6 +164,7 @@
 // var temp = '';
 // var chara = "@";
 
+//--------------------------------------------------------------------------------
 // for (var i = 0; i < num; i++){
 //     for (var j = 0; j <= i; j++){
 //         temp += chara;
@@ -171,6 +172,11 @@
 //     console.log(temp);
 //     temp = "";
 // }
+// NESTED FOR LOOP JIKA FOR YG KEDUA SYARATNYA SUDAH TERPENUHI KETIKA MASUK LAGI
+// DARI FOR PERTAMA DAN MELAKUKAN PENGULANGAN LAGI DI FOR KEDUA DIMANA FOR PERTAMA (i) 
+// SUDAH BERTAMBAH (i = 1) MAKA, FOR KEDUA AKAN BERNILAI 0 LAGI (j = 0) 
+// SETELAH MEMENUHI SYARATNYA DAN KELUAR DARI LOOP. 
+//-------------------------------------------------------------------------------
 
 // var num = 5;
 // var temp = "";
@@ -183,18 +189,17 @@
 //     temp = "";
 // }
 
-// pertemuan 3
+// pertemuan 3 
 
-var scores = [100, 50, 75, 70, 35];
+// var scores = [100, 50, 75, 70, 35];
+// var total = 0;
+// for(var i = 0; i < scores.length; i++){
+//     total += scores[i];
+// }
+// console.log(total); 
 
-var total = 0;
-for(var i = 0; i < scores.length; i++){
-    total += scores[i];
-}
-console.log(total); 
-
-var mean = total / scores.length;
-console.log(mean); 
+// var mean = total / scores.length;
+// console.log(mean); 
 
 var stats = [
             [1,2,3],
@@ -223,7 +228,6 @@ for(var i = 0; i < stats.length; i++){
 }
 console.log(jumlahBelasan); 
 
-var arrayMin = [];
 for(var i = 0; i< stats.length; i++){
     for(var j = 0; j < stats[i].length; j++){
         if(stats[i][j] < 0){
@@ -232,6 +236,46 @@ for(var i = 0; i< stats.length; i++){
     }
 }
 console.log(arrayMin); 
+
+var kelipatan = [];
+for(var i = 0; i < stats.length; i++){
+    for(var j = 0; j < stats[i].length; j++){
+        if(stats[i][j] % 10 === 0){
+            kelipatan.push(stats[i][j]);
+        }
+    }
+}
+console.log(kelipatan); 
+
+var murid = [
+    [1, "Vincent", 3.5],
+    [2, "Udin", 3.0],
+    [3, "Mamang", 2.1]
+];
+
+for(var i = 0; i < murid.length; i++){
+    if(murid[i][2] >= 3.0){
+        console.log(murid[i][0]+ ". "+
+        murid[i][1] + ", Lulus")
+    }else {
+        console.log(murid[i][0]+ ". "+
+        murid[i][1] + ", Tidak Lulus")
+    }
+}
+
+var watches = ["Swiss Army","Daniel Wellington","Dublot","Alba","G-Shock"];
+var tempp = "Saya punya ";
+for(var i = 0; i < watches.length; i++){
+    if(i === watches.length - 1){
+        tempp += "dan " + watches[i] + ".";
+    }else{
+        tempp += watches[i] + ", "; 
+    } 
+}
+console.log(tempp); 
+
+
+
 
 
 
