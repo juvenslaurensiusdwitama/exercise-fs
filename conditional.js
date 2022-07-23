@@ -173,7 +173,7 @@
 // }
 
 // var num = 5;
-// var temp = '';
+// var temp = "";
 
 // for(var i = 0; i < num; i++){
 //     for (var j = 0; j <= i; j++){
@@ -183,6 +183,55 @@
 //     temp = "";
 // }
 
+// pertemuan 3
+
+var scores = [100, 50, 75, 70, 35];
+
+var total = 0;
+for(var i = 0; i < scores.length; i++){
+    total += scores[i];
+}
+console.log(total); 
+
+var mean = total / scores.length;
+console.log(mean); 
+
+var stats = [
+            [1,2,3],
+            [-1],
+            [10,20,30,40,50],
+            [-5,-7],
+            [15,17,19]
+            ]
+var totals = 0;
+var jumlahBelasan = 0;
+var arrayMin = [];
+
+for(var i = 0; i < stats.length; i++){
+    for(var j = 0; j < stats[i].length; j++){
+        totals += stats[i][j];
+    }
+}
+console.log(totals);
+
+for(var i = 0; i < stats.length; i++){
+    for(var j = 0; j < stats[i].length; j++){
+        if(stats[i][j] >= 11 && stats[i][j] < 20){
+            jumlahBelasan += stats[i][j];
+        }
+    }
+}
+console.log(jumlahBelasan); 
+
+var arrayMin = [];
+for(var i = 0; i< stats.length; i++){
+    for(var j = 0; j < stats[i].length; j++){
+        if(stats[i][j] < 0){
+            arrayMin.push(stats[i][j]); 
+        }
+    }
+}
+console.log(arrayMin); 
 
 
 
