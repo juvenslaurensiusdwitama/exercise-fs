@@ -201,78 +201,208 @@
 // var mean = total / scores.length;
 // console.log(mean); 
 
-var stats = [
-            [1,2,3],
-            [-1],
-            [10,20,30,40,50],
-            [-5,-7],
-            [15,17,19]
-            ]
-var totals = 0;
-var jumlahBelasan = 0;
-var arrayMin = [];
+// var stats = [
+//             [1,2,3],
+//             [-1],
+//             [10,20,30,40,50],
+//             [-5,-7],
+//             [15,17,19]
+//             ]
+// var totals = 0;
+// var jumlahBelasan = 0;
+// var arrayMin = [];
 
-for(var i = 0; i < stats.length; i++){
-    for(var j = 0; j < stats[i].length; j++){
-        totals += stats[i][j];
-    }
-}
-console.log(totals);
+// for(var i = 0; i < stats.length; i++){
+//     for(var j = 0; j < stats[i].length; j++){
+//         totals += stats[i][j];
+//     }
+// }
+// console.log(totals);
 
-for(var i = 0; i < stats.length; i++){
-    for(var j = 0; j < stats[i].length; j++){
-        if(stats[i][j] >= 11 && stats[i][j] < 20){
-            jumlahBelasan += stats[i][j];
+// for(var i = 0; i < stats.length; i++){
+//     for(var j = 0; j < stats[i].length; j++){
+//         if(stats[i][j] >= 11 && stats[i][j] < 20){
+//             jumlahBelasan += stats[i][j];
+//         }
+//     }
+// }
+// console.log(jumlahBelasan); 
+
+// for(var i = 0; i< stats.length; i++){
+//     for(var j = 0; j < stats[i].length; j++){
+//         if(stats[i][j] < 0){
+//             arrayMin.push(stats[i][j]); 
+//         }
+//     }
+// }
+// console.log(arrayMin); 
+
+// var kelipatan = [];
+// for(var i = 0; i < stats.length; i++){
+//     for(var j = 0; j < stats[i].length; j++){
+//         if(stats[i][j] % 10 === 0){
+//             kelipatan.push(stats[i][j]);
+//         }
+//     }
+// }
+// console.log(kelipatan); 
+
+// var murid = [
+//     [1, "Vincent", 3.5],
+//     [2, "Udin", 3.0],
+//     [3, "Mamang", 2.1]
+// ];
+
+// for(var i = 0; i < murid.length; i++){
+//     if(murid[i][2] >= 3.0){
+//         console.log(murid[i][0]+ ". "+
+//         murid[i][1] + ", Lulus")
+//     }else {
+//         console.log(murid[i][0]+ ". "+
+//         murid[i][1] + ", Tidak Lulus")
+//     }
+// }
+
+// var watches = ["Swiss Army","Daniel Wellington","Dublot","Alba","G-Shock"];
+// var tempp = "Saya punya ";
+// for(var i = 0; i < watches.length; i++){
+//     if(i === watches.length - 1){
+//         tempp += "dan " + watches[i] + ".";
+//     }else{
+//         tempp += watches[i] + ", "; 
+//     } 
+// }
+// console.log(tempp); 
+
+function countFactors(num){
+    var tempFactors = [];
+    for(var i = 1; i <= num; i++){
+        if(num % i === 0){
+            tempFactors.push(i);
         }
     }
-}
-console.log(jumlahBelasan); 
-
-for(var i = 0; i< stats.length; i++){
-    for(var j = 0; j < stats[i].length; j++){
-        if(stats[i][j] < 0){
-            arrayMin.push(stats[i][j]); 
-        }
-    }
-}
-console.log(arrayMin); 
-
-var kelipatan = [];
-for(var i = 0; i < stats.length; i++){
-    for(var j = 0; j < stats[i].length; j++){
-        if(stats[i][j] % 10 === 0){
-            kelipatan.push(stats[i][j]);
-        }
-    }
-}
-console.log(kelipatan); 
-
-var murid = [
-    [1, "Vincent", 3.5],
-    [2, "Udin", 3.0],
-    [3, "Mamang", 2.1]
-];
-
-for(var i = 0; i < murid.length; i++){
-    if(murid[i][2] >= 3.0){
-        console.log(murid[i][0]+ ". "+
-        murid[i][1] + ", Lulus")
-    }else {
-        console.log(murid[i][0]+ ". "+
-        murid[i][1] + ", Tidak Lulus")
-    }
+    return tempFactors.length;
 }
 
-var watches = ["Swiss Army","Daniel Wellington","Dublot","Alba","G-Shock"];
-var tempp = "Saya punya ";
-for(var i = 0; i < watches.length; i++){
-    if(i === watches.length - 1){
-        tempp += "dan " + watches[i] + ".";
+function checkPrime(x){
+    var jumlahFaktor = countFactors(x);
+
+    if(jumlahFaktor === 2){
+        console.log(x + " adalah Prima");
     }else{
-        tempp += watches[i] + ", "; 
-    } 
+        console.log(x + " adalah Bukan Prima");
+    }
 }
-console.log(tempp); 
+
+// checkPrime(7);
+// checkPrime(9); 
+
+// Study Case 3
+// BUat segitiga '#' dan 'X'
+function triangle(n) {
+    var temp = ""
+    for (var i = 0; i < n; i++) {
+        // if (i % 2 === 0) {
+        //     for (var j = 0; j <= i; j++) {
+        //         temp += "#"
+        //     }
+        //     console.log(temp)
+        //     temp = ""
+        // } else {
+        //     for (var k = 0; k <= i; k++) {
+        //         temp += "X"
+        //     }
+        //     console.log(temp)
+        //     temp = ""
+        // }
+        for (var j = 0; j <= i; j++) {
+            if (j % 2 === 0) {
+                temp += '#'
+            } else {
+                temp += 'X'
+            }
+        }
+        console.log(temp)
+        temp = ""
+
+    }
+}
+// triangle(5); 
+
+
+// Study Case 4
+// Buat kotak kosong
+function square(angka) {
+    if (angka % 2 !== 0) {
+        var temp = ""
+        for (var i = 0; i < angka; i++) {
+            if (i === 0 || i === angka - 1) {
+                for (var j = 0; j < angka; j++) {
+                    temp += '#'
+                }
+                console.log(temp)
+                temp = ""
+            } else {
+                for (var j = 0; j < angka; j++) {
+                    if (j === 0 || j === angka - 1) {
+                        temp += "#"
+                    } else {
+                        temp += ' '
+                    }
+                }
+                console.log(temp)
+                temp = ""
+            }
+        }
+    } else {
+        console.log("Harus Ganjil")
+    }
+}
+// square(5)
+// square(4)
+
+// Study Case 5
+// Buat kotak kosong, tetapi ada tengahnya
+/**
+var num = 5;
+#####
+@   @
+@ $ @
+@   @
+#####
+ */   
+
+function square(angka) {
+    if (angka % 2 !== 0) {
+        var temp = ""
+        for (var i = 0; i < angka; i++) {
+            if (i === 0 || i === angka - 1) {
+                for (var j = 0; j < angka; j++) {
+                    temp += '#'
+                }
+                console.log(temp)
+                temp = ""
+            } else {
+                for (var j = 0; j < angka; j++) {
+                    if (j === 0 || j === angka - 1) {
+                        temp += "@"
+                    }else{
+                        if(i === Math.floor(angka / 2) && j === Math.floor(angka/2)){
+                            temp += '$'
+                        }else{
+                            temp += ' '
+                        }
+                    }
+                }
+                console.log(temp)
+                temp = ""
+            }
+        }
+    } else {
+        console.log("Harus Ganjil");
+    }
+} 
+square(5);  
 
 
 
